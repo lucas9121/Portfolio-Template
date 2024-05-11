@@ -1,0 +1,136 @@
+@property --fog {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 4%;
+}
+
+
+footer{
+    background: black;
+    background: radial-gradient(black var(--fog), transparent);
+    padding: 4rem 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    color: white;
+    animation: addFog 2s ease forwards;
+    &:hover {
+        animation: removeFog 2s ease forwards;
+    }
+}
+
+footer > p {
+    margin: 0;
+    font-weight: 700;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container > h2 {
+    margin-top: 0;
+    text-align: start;
+}
+
+.footer-container > h4{
+    margin: 0;
+    text-align: start;
+}
+
+
+.footer-container > ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 0;
+    margin: 0;
+    width: 100%;
+}
+
+.footer-container > ul > li {
+    list-style: none;
+}
+
+.footer-container > ul > li > a > svg {
+    height: 1.5rem;
+    width: 2.5rem;
+}
+
+/* footerNight{
+    background: #030c14c7;
+} */
+  
+#Linkedin:hover {
+    color: cornflowerblue;
+    transition: .25s;
+}
+
+.footer-icon{
+    color: white;
+    &:hover {
+        color: rgb(126, 125, 125);
+        transition: .25s;
+    }
+}
+
+.footer-lower {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: solid 1px;
+    width: 91vw;
+}
+
+@keyframes removeFog {
+    from{
+        --fog: 4%
+    }
+    to{
+        --fog: 95%
+    }
+}
+
+@keyframes addFog {
+    from{
+        --fog: 95%
+    }
+    to{
+        --fog: 4%
+    }
+}
+
+
+/* ////////////////////////////////  Screen Sizes   //////////////////////////////// */
+@media (max-width: 1280px){
+    footer {
+        background: black;
+        animation: none;
+        &:hover{
+            animation: none;
+        }
+    }
+}
+@media (max-width: 450px){
+  footer {
+    padding: 2rem 1rem 7rem;
+  }
+  
+  .footer-container > h2 {
+    text-align: center;
+  }
+
+  .footer-container > h4 {
+    text-align: center;
+  }
+
+  .footer-container > ul {
+    justify-content: center;
+  }
+
+  .footer-lower {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+  }
+}
