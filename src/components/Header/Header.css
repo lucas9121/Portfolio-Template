@@ -6,7 +6,7 @@ header{
     justify-content: center;
     align-items: center;
     transition: 1s;
-    background: url(../../../public/images/software-computer-code-1940x900_35196.jpeg);
+    background: black;
     background-size: cover;
     background-repeat: round;
     z-index: 2;
@@ -23,7 +23,7 @@ header{
 }
 
 #portrait {
-  background: url(../../../public/images/lucas-carlos.png);
+  background: url(../../../public/images/batman.jpg);
   background-size: cover;
   background-repeat: none;
   width: 5rem;
