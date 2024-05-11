@@ -1,0 +1,178 @@
+@property --first {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #ecececcc;
+}
+
+@property --second {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #ecececcc;
+}
+
+#About {
+    background: linear-gradient(to right, var(--first), var(--second)), url(/public/images/backgroundPattern.jpg);
+    padding: 8em 0 8rem 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#About.dark{
+    animation: darkBackground 2s ease forwards;
+}
+
+#About.light {
+    animation: lightBackground 2s ease forwards;
+}
+#About > h2 {
+    font-size: 3rem;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin: 0;
+    color: black;
+    transition: color 2s;
+}
+
+.dark-mode{
+    color: gainsboro !important;
+    transition: color 2s;
+}
+
+#AboutMe{
+    display: flex;
+    width: 90%;
+    max-width: 1350px;
+}
+
+#About-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8rem;
+}
+
+#About-description > div{
+    flex-direction: column;
+}
+
+
+#About-description > div::-webkit-scrollbar {
+    display: none;
+}
+
+#About-description > .nightMode::-webkit-scrollbar-thumb{
+    background: gainsboro;
+    border-radius: 10px;
+    transition: background 2s;
+}
+
+#About-description > div > p {
+    text-align: start;
+    font-size: 1.3rem;
+    font-weight: 600;
+    max-width: 60rem;
+    line-height: 1.5;
+    margin: 0;
+    text-indent: 2%;
+    color: inherit;
+    transition: color 2s;
+}
+
+#skills {
+    font-weight: 800;
+    transition: color 2s;
+}
+
+#skills > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+#skills > ul > li {
+    padding: .8rem 1.5rem;
+    font-size: 1rem;
+    background: rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+    font-weight: bold;
+    color: inherit;
+}
+
+.about-title {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    text-align: start;
+    color: black;
+    transition: color 2s;
+    
+}
+
+/* ////////////////////////////////   Animations   //////////////////////////////// */
+@keyframes darkBackground {
+    from{
+        --first: #ecececcc;
+        --second: #ecececcc;
+    }
+    to{
+        --first: #000000cc;
+        --second: #000000cc;
+    }
+}
+
+@keyframes lightBackground {
+    from{
+        --first: #000000cc;
+        --second: #000000cc;
+    }
+    to{
+        --first: #ecececcc;
+        --second: #ecececcc;
+    }
+}
+
+
+/* ////////////////////////////////  Screen Sizes   //////////////////////////////// */
+@media (max-width: 1250px){
+    #About-description{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+
+@media (max-width: 450px){
+    #About {
+        padding: 6rem 0 6rem 0;
+    }
+
+    #About-description > div > p {
+        font-weight: normal;
+    }
+
+    .about-title{
+        text-align: center;
+    }
+
+    #skills > ul {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 282px) {
+    #About-description > div > p {
+        font-size: 1rem;
+    }
+
+    #skills > ul > li {
+        font-size: 0.8rem;
+    }
+}
