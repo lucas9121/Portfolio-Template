@@ -33,7 +33,6 @@ export default function Headers({toggle, setToggle, sticky, setSticky, setIsClic
     return (
         <header className={sticky ? "sticky" : ""}>
             <div id="portrait" className={!sticky ? 'hide' : 'show'} onClick={() => handleScrollToTop()}></div>
-            {!sticky && <div className="background-overlay"></div> }
             <div id="mouse-icon" className={sticky ? 'hide' : 'show'}><div id="mouse" onClick={() => {setSticky(!sticky); scrollDown()}}></div> </div>
             <nav>
                 <BiMenu className='hamburger' onClick={() => {setShow(!show)}} />
