@@ -1,0 +1,58 @@
+.homeHero{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 900px;
+  width: 100%;
+  color: white;
+  z-index: 4;
+  pointer-events: none;
+  opacity: 100;
+  transition: opacity 2s;
+}
+
+.homeHero > h1 {
+  font-size: 5rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0;
+}
+
+.homeHero > h2 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.homeHeroInfo {
+  font-size: 2rem;
+}
+
+.homeHeroInfo > p {
+  margin: 2rem auto 0;
+}
+
+.hide{
+  position: absolute;
+  opacity: 0;
+  transition: opacity .5s;
+  pointer-events: none;
+}
+
+
+/* ////////////////////////////////  Screen Sizes   //////////////////////////////// */
+@media (max-width: 450px){
+  .homeHero{
+    width: 85%;
+  }
+
+  .homeHero > h1 {
+    font-size: 2.5em;
+  }
+  
+  .homeHeroInfo > p {
+    font-size: 1rem;
+  }
+}
