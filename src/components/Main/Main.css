@@ -1,0 +1,24 @@
+.content-section {
+  height: calc(101vh - (80px + 2rem));
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  color: #3c3c3ce3;
+}
+
+.content-section::-webkit-scrollbar {
+  display: none;
+}
+
+.main-light-mode {
+  color: #3c3c3ce3;
+  margin: 0;
+}
+
+
+.main-dark-mode {
+  color: gainsboro;
+  margin: 0;
+}
