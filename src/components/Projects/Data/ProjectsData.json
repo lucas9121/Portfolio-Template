@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "name": "Batcave",
+      "summary": "Secret Lair to hide my secret identity, practice my martial art, and collect cool souvenirs from my arch enemies.",
+      "description": "Deep beneath the urban sprawl of Gotham City lies my most treasured sanctuary: the Batcave. Carved into the bedrock beneath Wayne Manor, this clandestine lair serves as the nerve center of my vigilant crusade against crime. Within its expansive confines, state-of-the-art technology intertwines seamlessly with the echoes of history. My extensive armory, meticulously organized and constantly updated, stands as a testament to my commitment to justice. From the sleek lines of the Batmobile to the towering computers that analyze every scrap of data, the Batcave is a testament to the marriage of innovation and determination. Yet, amid the steel and circuitry, the heart of the Batcave remains the symbol of my enduring quest—a testament to the unyielding spirit that drives me to protect the innocent and strike fear into the hearts of those who prey upon them.\nSurrounded by stalactites and stalagmites, the Batcave is a refuge where I can shed the mask of Bruce Wayne and embrace the mantle of the Dark Knight. Its winding tunnels and shadowy alcoves bear witness to the countless hours spent honing my skills and refining my arsenal. From the towering T-Rex to the preserved trophies of my most notorious adversaries, every corner of this subterranean fortress tells a story—a reminder of the battles won and the sacrifices made in the name of justice. Here, in the heart of the earth, I am free to strategize, to train, and to contemplate the ever-shifting tide of Gotham's underworld. The Batcave is more than just a hideout; it is a testament to my commitment, my sacrifice, and my unwavering resolve to stand as a beacon of hope in a city consumed by darkness.\nConsider this a friendly reminder: the Batcave isn't a spot for casual exploration. It's my turf, meticulously designed for my purposes alone. Trust me, you don't want to stumble into a place where every corner is wired with security measures you can't even imagine. It's not just about protecting my secrets; it's about keeping everyone safe, including nosy intruders. So unless you're itching for a run-in with some seriously advanced security tech, I suggest you keep your distance. There are plenty of other places in Gotham to satisfy your curiosity—just not here.",
+      "tech": "HTML, CSS, JavaScript, React",
+      "projectType": "Fullstack",
+      "dateCreated": "2024-05-12",
+      "projectCategory": "Personal",
+      "projectLink": "https://github.com",
+      "liveLink": "https://gamehub-react.herokuapp.com/games",
+      "images": [
+        {
+          "id": "HS65HN96B",
+          "src": "https://media.istockphoto.com/id/1306533369/photo/a-flock-of-bats-sleep-on-the-ceiling-in-a-cave-with-a-flashlight-in-the-cave-of-bats.webp?b=1&s=170667a&w=0&k=20&c=C9UY--cZL3G5K13mYnQOSIVXQuRfGLG2RiZwSyCOx7o=",
+          "alt": "Batcave picture 1"
+        },
+        {
+          "id": "LSN8763LO7",
+          "src": "/images/batman.jpg",
+          "alt": "Batman 1"
+        },
+        {
+          "id": "US7620M35",
+          "src": "https://images.unsplash.com/photo-1542410613-d073472c3135?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJhdG1hbiUyMHRyZXh8ZW58MHx8MHx8fDI%3D",
+          "alt": "Batman 2"
+        }
+      ]
+    }
+  ]
+}
